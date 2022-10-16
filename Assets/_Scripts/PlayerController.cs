@@ -29,26 +29,17 @@ public class PlayerController : MonoBehaviour
     public GameObject bullet;
     public Transform projectilePos;
 
-    private void OnEnable()
-    {
-        inputAction.Player.Enable();
-    }
-
-    private void OnDisable()
-    {
-        inputAction.Player.Disable();
-    }
-
     // Start is called before the first frame update
-    void Awake()
+    // Awake to Start
+    void Start()
     {
-        if (!instance);
+        if (!instance)
         {
             instance = this;
         }
 
-
-        inputAction = new PlayerAction();
+        // Using controller from PlayerInputController
+        inputAction = PlayerInputController.controller.inputAction;
 
         inputAction.Player.Move.performed += cntxt => move = cntxt.ReadValue<Vector2>();
         inputAction.Player.Move.canceled += cntxt => move = Vector2.zero;
