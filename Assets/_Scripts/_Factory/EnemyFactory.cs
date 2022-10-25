@@ -26,7 +26,6 @@ public class EnemyFactory : MonoBehaviour
         {
             var tempType = Activator.CreateInstance(type) as Enemy;
             enemies.Add(tempType);
-            Debug.Log(tempType.Name);
         }
 
         ButtonPanel();

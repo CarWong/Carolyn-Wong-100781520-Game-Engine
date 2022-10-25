@@ -3603,6 +3603,7 @@ GameObject:
   - component: {fileID: 1331215909}
   - component: {fileID: 1331215911}
   - component: {fileID: 1331215910}
+  - component: {fileID: 1331215912}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -3722,6 +3723,18 @@ MonoBehaviour:
   prefab2: {fileID: 4317748230980102387, guid: 58843e7da8700694b800e5bdde507a04, type: 3}
   buttonPanel: {fileID: 2098421839}
   buttonPrefab: {fileID: 6412115680505969771, guid: 8b635d74e59d20743a7a708d6c3529b3, type: 3}
+--- !u!114 &1331215912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331215903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0342b4d0abc11438f9056844a283cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1392566097
 PrefabInstance:
   m_ObjectHideFlags: 0
