@@ -18,7 +18,7 @@ public class Flyweight : MonoBehaviour
     {
         allItems = new List<Item>();
         fn = Application.dataPath + "/save.txt";
-        LoadItems();
+        //LoadItems();
     }
 
     void LoadItems()
