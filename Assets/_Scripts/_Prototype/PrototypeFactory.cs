@@ -17,6 +17,7 @@ public class PrototypeFactory : MonoBehaviour
     BlueGem bluePrototype;
     GreenGem greenPrototype;
     PinkGem pinkPrototype;
+    FullHeart heartProtoype;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class PrototypeFactory : MonoBehaviour
         bluePrototype = new BlueGem(allData[1]._prefab, allData[1]._score);
         greenPrototype = new GreenGem(allData[2]._prefab, allData[2]._score);
         pinkPrototype = new PinkGem(allData[3]._prefab, allData[3]._score);
+        heartProtoype = new FullHeart(allData[4]._prefab, allData[4]._heal);
 
         for(int i = 0; i< allData.Count; i++)
         {
@@ -54,6 +56,9 @@ public class PrototypeFactory : MonoBehaviour
                 break;
             case "PinKGem":
                 editor.item = pinkPrototype.Clone().Spawn();
+                break;
+            case "FullHeart":
+                editor.item = heartProtoype.Clone().Spawn();
                 break;
             default:
                 break;
